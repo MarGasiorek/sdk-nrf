@@ -12,7 +12,7 @@ if(CONFIG_NRF_802154_RADIO_DRIVER OR CONFIG_NRF_802154_SERIALIZATION)
           ${CMAKE_CURRENT_SOURCE_DIR}/sl/platform/nrf_802154_hp_timer.c
           ${CMAKE_CURRENT_SOURCE_DIR}/sl/platform/nrf_802154_platform_sl_lptimer_zephyr.c
       )
-    elseif(CONFIG_SOC_SERIES_NRF54H OR CONFIG_SOC_SERIES_NRF54L)
+    elseif(CONFIG_SOC_SERIES_NRF54H OR CONFIG_SOC_SERIES_NRF54L OR CONFIG_SOC_SERIES_NRF81)
       target_sources(nrf-802154-platform
         PRIVATE
           ${CMAKE_CURRENT_SOURCE_DIR}/sl/platform/nrf_802154_platform_timestamper.c

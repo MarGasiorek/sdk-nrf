@@ -17,6 +17,10 @@
     #include"templates/nrfx_config_nrf54ls05a_application.h"
 #elif (defined(NRF54LS05B_XXAA)) && defined(NRF_APPLICATION)
     #include"templates/nrfx_config_nrf54ls05b_application.h"
+#elif (defined(NRF81P20_XXAA)) && defined(NRF_APPLICATION)
+    #include "templates/nrfx_config_nrf81p20_application.h"
+#elif (defined(NRF81P20_XXAA)) && defined(NRF_FLPR)
+    #include "templates/nrfx_config_nrf81p20_flpr.h"
 #else
     #error "Unknown device."
 #endif

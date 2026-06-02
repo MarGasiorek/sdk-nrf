@@ -224,7 +224,7 @@ void nrf_802154_platform_sl_lptimer_hw_task_local_domain_connections_clear(void)
 	nrf_ipct_event_clear(NRF_IPCT, IPCT_L_EVENT_RECEIVE);
 }
 
-#elif defined(NRF54L_SERIES)
+#elif defined(NRF54L_SERIES) || defined(CONFIG_SOC_SERIES_NRF81)
 
 #include <helpers/nrfx_gppi.h>
 #include <soc/interconnect/nrfx_gppi_d2ppi.h>

@@ -20,7 +20,8 @@
 #define MPSL_RTC_IRQn                        RTC0_IRQn
 #define MPSL_RADIO_IRQn                      RADIO_IRQn
 
-#elif defined(CONFIG_SOC_COMPATIBLE_NRF54LX) || defined(CONFIG_SOC_SERIES_NRF71)
+#elif defined(CONFIG_SOC_COMPATIBLE_NRF54LX) || defined(CONFIG_SOC_SERIES_NRF71) || \
+	defined(CONFIG_SOC_SERIES_NRF81)
 #define MPSL_INIT_SOC_COUNTER_RESERVED_NODES timer10
 #define MPSL_TIMER_IRQn                      TIMER10_IRQn
 #define MPSL_RTC_IRQn                        GRTC_3_IRQn

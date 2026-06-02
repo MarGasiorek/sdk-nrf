@@ -213,7 +213,7 @@ void nrf_802154_platform_timestamper_local_domain_connections_setup(uint32_t dpp
 	nrf_ipct_subscribe_set(NRF_IPCT, IPCT_L_TASK_SEND, dppi_ch);
 }
 
-#elif defined(NRF54L_SERIES)
+#elif defined(NRF54L_SERIES) || defined(CONFIG_SOC_SERIES_NRF81)
 
 /* To trigger GRTC.TASKS_CAPTURE[#cc] with RADIO.EVENT_{?}, the following connection chain must be
  * created:
